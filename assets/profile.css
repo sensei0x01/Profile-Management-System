@@ -1,0 +1,192 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e9ebee;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header/navigation bar */
+.navbar {
+    background-color: #1877f2;
+    color: white;
+    padding: 10px 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    color: white;
+    margin-left: 20px; /* Adjust this value to move the logo further right */
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+    font-size: 16px;
+}
+
+.navbar a:hover {
+    background-color: #1877f2;
+}
+
+/* Main content area */
+.content {
+    width: 400px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+/* Profile section */
+.profile {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.profile h3 {
+    color: #3b5998;
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Container for the entire form */
+.facebook-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff; /* Light Facebook-style background #f0f2f5 */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+/* Profile picture container */
+.profile-pic-container {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 20px; /* Centered and spaced */
+    text-align: center;
+}
+
+/* Hide the file input */
+#upload {
+    display: none;
+}
+
+/* Label for the profile picture */
+.profile-pic-container label {
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* Profile picture styling */
+#profile-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%; /* Circular shape */
+    border: 3px solid #ddd; /* Border for contrast */
+    transition: 0.3s;
+}
+
+/* Hover effect */
+.profile-pic-container label:hover #profile-pic {
+    opacity: 0.9;
+}
+
+/* Form group styling */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+/* Label styling */
+.form-group label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #4b4f56; /* Dark gray for labels */
+}
+
+/* Input styling */
+.form-group input[type="text"],
+.form-group input[type="email"] {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus {
+    border-color: #1877f2; /* Facebook blue on focus */
+}
+
+/* Submit button styling */
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #1877f2; /* Facebook blue */
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.submit-btn:hover {
+    background-color: #155dab; /* Darker blue on hover */
+}
+
+
+/* Style specifically for readonly fields */
+.form-group input[readonly] {
+    background-color: #e9ecef; /* Light gray background */
+    color: #6c757d; /* Dimmed text color */
+    cursor: not-allowed; /* Shows "not-allowed" cursor to indicate it's non-editable */
+}
+
+
+.error-message {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ff0000;
+}   
+
