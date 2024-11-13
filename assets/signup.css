@@ -1,0 +1,151 @@
+/* Reset basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body styling */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f0f2f5;
+}
+
+.app-logo {
+    font-family: Arial, sans-serif; /* Or use 'Roboto' if available */
+    font-size: 48px;
+    font-weight: bold;
+    color: #1877f2;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form container styling */
+.form-container {
+    background-color: #fff;
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Header text styling */
+.form-container h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-container p {
+    font-size: 14px;
+    color: #606770;
+}
+
+/* Name fields styling */
+.name-fields {
+    display: flex;
+    gap: 10px;
+}
+
+.name-fields input {
+    width: 48%;
+}
+
+/* Date of Birth fields */
+.dob-fields, .gender-fields {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+/* Input fields styling */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #dddfe2;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Gender fields styling */
+.gender-fields label {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #dddfe2;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.gender-fields input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Submit Button styling */
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background-color: #42b72a; /* Facebook's green sign-up button */
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect for button */
+input[type="submit"]:hover {
+    background-color: #36a420;
+}
+
+/* Terms and conditions text */
+.terms {
+    font-size: 12px;
+    color: #606770;
+    margin-top: 10px;
+}
+
+.terms a {
+    color: #385898;
+    text-decoration: none;
+}
+
+.terms a:hover {
+    text-decoration: underline;
+}
+
+/* Already have an account link */
+.login-link {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.login-link a {
+    color: #385898;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+.error-message {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ff0000;
+}   

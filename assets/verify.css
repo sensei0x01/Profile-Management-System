@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 380px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.header {
+    font-size: 24px;
+    color: #1877f2;
+    margin-bottom: 10px;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #1c1e21;
+}
+
+.instructions {
+    font-size: 14px;
+    color: #606770;
+    margin-bottom: 20px;
+}
+
+.input-box {
+    width: 100%; /* Makes the input box span the full container width */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccd0d5;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    box-sizing: border-box; /* Includes padding and border in the total width */
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Button Styling */
+.button {
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none; /* Remove underline from links */
+}
+
+/* Cancel Button */
+.cancel {
+    background-color: #f0f2f5;
+    color: #1c1e21;
+}
+
+/* Continue Button */
+.continue {
+    background-color: #1877f2;
+    color: #fff;
+    border: none;
+}
+
+.link {
+    font-size: 14px;
+    color: #1877f2;
+    text-decoration: none;
+}
+
+.error-message {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ff0000;
+}   
